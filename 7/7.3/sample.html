@@ -7,6 +7,37 @@
   </head>
   <body>
     <h1>Operator Perbandingan</h1>
-    <script></script>
+    <script>
+      // berfungsi untuk memeriksa bagaimana hungunan sebuah nilai dengan nilai lain, apakah sama besar, tidak sama, lebih besar atau lebih kecil.
+      var foo;
+
+      foo = 9 < 12; // console.log(foo) // true
+      foo = 5 <= 5; // console.log(foo) // true
+      foo = 8 != 12; // console.log(foo) // true
+      foo = 15 == 12; //console.log(foo) // false
+      foo = 15 === 15; // console.log(foo) // true
+      foo = 0.3 === 3e-1; // console.log(foo) // true
+      foo = 5 == "5"; // console.log(foo) // true, ini diagap benar tapi sebenarnya salah.
+      foo = 5 === "5"; // console.log(foo) // false.
+
+      // perbandingan dengan tipe data string.
+      var bar;
+      bar = "a" < "b"; // console.log(bar) // true
+      bar = "a" < "A"; // console.log(bar) // false
+      bar = "reva" < "revika"; // console.log(bar) // true
+      bar = "joni" == 12; // console.log(bar) // false
+      bar = false < true; // console.log(bar) // true
+      bar = true < false; // console.log(bar) // false
+
+      // perbedaan antara == dengan ===
+      var baz;
+      baz = 9 == "9"; // consele.log(baz) // true
+      baz = 9 === "9"; // console.log(baz) // false
+      baz = true == 1; // console.log(baz) // true, angka 1 dianggap sama dengan true
+      baz = true === 1; // console.log(baz)// false, ini akan mengecek type data
+      baz = true == 3; // console.log(baz) // false
+      baz = false == 0; // console.log(baz) // true, angka 0 dianggap sama dengan true
+      baz = false == 1; // console.log(baz) // false
+    </script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konsep Short-circuit Evaluation</title>
+  </head>
+  <body>
+    <h1>Konsep Short-circuit Evaluation</h1>
+    <script>
+      var foo;
+      foo = true || true || false; //console.log(foo) true
+      foo = false && true && true; //console.log(foo) false
+      foo = true && true && false; //console.log(foo) false
+
+      var bar = false;
+      var baz = bar && alert("Hello Wisnawa"); // alert() baru berjalan jika variabel bar bernilai true
+
+      var bar = true;
+      var baz = bar && alert("Hello Wisnawa");
+      // sama juga seperti ini.
+      var bar = !false;
+      var baz = bar && alert("I Putu Wisnawa");
+      //   sama juga seperti ini.
+      var bar = false;
+      var baz = bar || alert("Selamat Data Putu Wisnawa");
+      //
+      var bar = true;
+      var baz = bar || alert("Apakah ini Juga Akan Tapil?"); //pengaruh dari short-sircuite
+    </script>
+  </body>
+</html>

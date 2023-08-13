@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator +</title>
+  </head>
+  <body>
+    <h1>Operator +</h1>
+    <script>
+      //  fitur template string dari ECMAScript 6, kita bisa menulis semuanya di dalam string
+      var foo, bar, baz;
+      var siswa = ["Andi", "Budi", "Candrea", "Dody", "Eka"];
+      foo = `${siswa[1]} mendapat penghargaan sebagai siswa teladan`; // console.log(foo) Budi mendapat penghargaan sebagai siswa teladan
+      bar = `${siswa[4]} dan ${siswa[0]} adalah teman akrab`; // console.log(bar) Eka dan Andi adalah teman akrab
+      baz = `Dalam ujian kemaren ${siswa[0]} mendapat nilai + ${4 * 20}`; //console.log(baz) Dalam ujian kemaren Andi mendapat nilai + 80
+    </script>
+  </body>
+</html>

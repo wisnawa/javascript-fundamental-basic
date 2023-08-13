@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <h1>Operator Logika</h1>
+    <script>
+      var foo;
+      foo = true && false; //console.log(foo) false
+      foo = false && true; //console.log(foo) false
+      foo = true && true; // console.log(foo) true
+      foo = false && false; //console.log(foo) false
+
+      var bar;
+      bar = true || false; //console.log(bar) true
+      bar = true || true; //console.log(bar) true
+      bar = false || false; //console.log(bar) false
+      bar = false || true; //console.log(bar) true
+
+      var baz;
+      baz = !false; //console.log(baz) true
+      baz = !true; //console.log(baz) false
+
+      var foo2;
+      foo2 = true || (true && false); //console.log(foo2) true
+      foo2 = (false && true) || true; //console.log(foo2) true
+      foo2 = (false && false) || false; //console.log(foo2) false
+      foo2 = !false || false; //console.log(foo2) true
+      foo2 = !true || false; //console.log(foo2) false
+      foo2 = !true || true; //console.log(foo2) true
+      foo2 = !false && false; //console.log(foo2) false
+      foo2 = !false && true; //console.log(foo2) true
+    </script>
+  </body>
+</html>

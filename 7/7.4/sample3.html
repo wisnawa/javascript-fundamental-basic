@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operation Logika non Bolean</title>
+  </head>
+  <body>
+    <h1>Operation Logika non Bolean</h1>
+    <script>
+      var foo = "Putu" || "Wisnawa"; //console.log(foo) Putu
+      var foo = "Putu" && "Wisnawa"; //console.log(foo) Wisnawa
+      var foo = true || "Wisnawa"; //console.log(foo) true
+      var foo = false || "Wisnawa"; //console.log(foo) Wisnawa
+      var foo = "Wisnawa" && false; // console.log(foo) false
+      var foo = false && "Wisnawa"; // console.log(foo) false
+      var foo = false || (false && true) || "Wisnawa"; //console.log(foo) Wisnawa
+      var foo = true || (false && true) || "Wisnawa"; //console.log(foo) true
+    </script>
+  </body>
+</html>
