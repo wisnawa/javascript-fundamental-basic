@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Nested IF ELSE</title>
+  </head>
+  <body>
+    <h1>Nested IF ELSE</h1>
+    <script>
+      var foo = 5;
+      console.log("nilai foo = " + foo);
+      if (typeof foo === "number" && foo >= 10) {
+        console.log("foo bertipe number");
+        console.log("nilai foo lebih dari 10");
+      } else if (typeof foo === "number" && foo < 10) {
+        console.log("foo bertipe number");
+        console.log("nilai foo kecil dar 10");
+      } else if (typeof foo === "string") {
+        console.log("foo adalah string yaitu " + foo);
+      } else {
+        console.log("foo bukan bertipe number maupun string");
+      }
+    </script>
+  </body>
+</html>
