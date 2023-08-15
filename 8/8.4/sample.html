@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested IF ELSE</title>
+  </head>
+  <body>
+    <h1>Nested IF ELSE</h1>
+    <script>
+      // struktur if bersarang
+      var foo = "wisnawa";
+      console.log("nilai foo = " + foo);
+      if (typeof foo === "number") {
+        console.log("foo bertipe number");
+        if (foo >= 10) {
+          console.log("nilai foo besar dar 10");
+        } else {
+          console.log("nilai foo kecil dari 10");
+        }
+      } else if (typeof foo === "string") {
+        console.log("foo bertipe string");
+      } else {
+        console.log("foo buka bertipe number maupun string");
+      }
+    </script>
+  </body>
+</html>
