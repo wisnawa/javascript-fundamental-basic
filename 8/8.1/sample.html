@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struktur Logika IF</title>
+  </head>
+  <body>
+    <h1>Struktur Logika IF</h1>
+    <script>
+      // if digunakan untuk membuat percabangan kode program yang bergantung apakah sebuah kondisi bisa dipenuhi atau tidak.
+      var hari = "senin";
+      if (hari === "senin") {
+        console.log("Saatnya kerja pada hari " + hari);
+      }
+
+      var hariKerja = "senin";
+      if (hariKerja === "senin") {
+        console.log("saatnya Kerja....");
+        console.log("Besok Hari selasa");
+      }
+      //   if untuk pengecekan validasi.
+      var user = "admin";
+      if (user === "admin") {
+        console.log("Selamat datang admin");
+      }
+      //   if untuk pengecekan apakah nilai yang diimput user udah sesuati atau tidak.
+      var username = "wisnawa";
+      if (typeof username === "string") {
+        console.log("Username valid....");
+      }
+      //   statement tidak dijalankan karena bernilai false.
+      var username2 = 223;
+      if (typeof username2 === "string") {
+        console.log("Username valid...");
+      }
+    </script>
+  </body>
+</html>
