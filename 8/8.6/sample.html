@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Conditional</title>
+  </head>
+  <body>
+    <h1>Operator Conditional</h1>
+    <script>
+      var jumlah_barang = 1000;
+      var total;
+      if (jumlah_barang > 500) {
+        total = jumlah_barang * 100;
+      } else {
+        total = jumlah_barang * 150;
+      }
+      console.log(total); // 100000
+
+      //   Operator conditional.
+      var jumlah_barang = 1000;
+      var total;
+
+      total = jumlah_barang > 500 ? jumlah_barang * 100 : jumlah_barang * 150;
+      console.log(total); // 100000
+      //   Bisa dibaca: apakah jumlah_barang > 500 ? Jika iya (true), jalankan jumlah_barang * 100, hasilnya dikirim ke variabel total. Jika tidak (false), jalankan jumlah_barang * 150, hasilnya dikirim ke variabel total.
+    </script>
+  </body>
+</html>
