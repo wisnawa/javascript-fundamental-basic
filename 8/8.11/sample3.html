@@ -8,11 +8,14 @@
   <body>
     <h1>Perulangan WHILE</h1>
     <script>
-      //
+      // break
       var i = 1;
       while (i <= 10) {
-        console.log("Hello Wisnawa " + i);
-        i++;
+        if (i === 5) {
+          break;
+        }
+        console.log("Hello JavaScript " + i);
+        i = i + 1;
       }
     </script>
   </body>
