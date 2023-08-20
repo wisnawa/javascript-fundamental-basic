@@ -8,18 +8,17 @@
   <body>
     <h1>Argument Function</h1>
     <script>
+      // argument lebih atau kurang dari jumlah argument.
       function rata2(a, b, c, d) {
         var hasil = (a + b + c + d) / 4;
         return hasil;
       }
-      var nilai1 = rata2(8, 5, 2, 4);
-      console.log(nilai1); // 4.75
+      //   jumlah argument hanya 3 seharusnya ada 4 argument
+      var nilai1 = rata2(8, 5, 2);
+      console.log(nilai1); // NaN
 
-      var nilai2 = rata2(90, 78, 96, 76);
-      console.log(nilai2); // 85
-
-      var nilai3 = rata2(nilai1, 55, 60, nilai2);
-      console.log(nilai3); // 51.1875
+      var nilai2 = rata2(9, 9, 9, 9, 9, 1, 1);
+      console.log(nilai2); // 9 (tidak error!)
     </script>
   </body>
 </html>
