@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Scope</title>
+  </head>
+  <body>
+    <h1>Variable Scope</h1>
+    <script>
+      function foo() {
+        // ini dipanggil dari local variable dan masuk kedalam scope.
+        var a = "Belajar JavaScript";
+        console.log(a);
+      }
+      foo(); // Belajar JavaScript
+      console.log(a); // ReferenceError: a is not defined. dipanggil dari global variable.
+    </script>
+  </body>
+</html>

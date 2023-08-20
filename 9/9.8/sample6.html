@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Scope</title>
+  </head>
+  <body>
+    <h1>Variable Scope</h1>
+    <script>
+      function foo() {
+        // local variable
+        var a = 21;
+        var b = 56;
+        return a + b;
+      }
+      //   global varible
+      var a = 5;
+      var b = 10;
+      // menampung local variable.
+      var c = foo();
+
+      console.log(a); // 5
+      console.log(b); // 10
+      console.log(c); // 77
+    </script>
+  </body>
+</html>

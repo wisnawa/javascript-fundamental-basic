@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Scope</title>
+  </head>
+  <body>
+    <h1>Variable Scope</h1>
+    <script>
+      function foo() {
+        // a dan b, tanpa var -> menjadi global scope
+        a = 21;
+        b = 56;
+        return a + b;
+      }
+      var a = 5;
+      var b = 10;
+      var c = foo();
+
+      console.log(a); // 21
+      console.log(b); // 57
+      console.log(c); // 77
+    </script>
+  </body>
+</html>

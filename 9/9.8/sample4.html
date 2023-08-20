@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Scope</title>
+  </head>
+  <body>
+    <h1>Variable Scope</h1>
+    <script>
+      // global variable
+      var a = "Belajar Pemrograman Web";
+      function foo() {
+        // local variable.
+        var a = "Belajar JavaScript";
+        console.log(a);
+      }
+      foo(); // Belajar JavaScript
+      console.log(a); // Belajar Pemrograman Web
+    </script>
+  </body>
+</html>

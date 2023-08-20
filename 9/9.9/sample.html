@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Perbedaan cara membuat Variable var & let</title>
+  </head>
+  <body>
+    <h1>Perbedaan cara membuat Variable var & let</h1>
+    <script>
+      {
+        // block code
+        var a = "Belajar JavaScript";
+        // local variable scope
+        console.log(a); // Belajar JavaScript
+      }
+      //   global variable scope
+      console.log(a); // Belajar JavaScript
+
+      {
+        // block code
+        let b = "Belajar Web Programming";
+        // local variable scope
+        console.log(b); // Belajar Web Programming
+      }
+      //   global variable scope
+      console.log(b); // ReferenceError: b is not defined
+    </script>
+  </body>
+</html>

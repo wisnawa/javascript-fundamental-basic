@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Hoisting</title>
+  </head>
+  <body>
+    <h1>JavaScript Hoisting</h1>
+    <script>
+      var a = "Belajar Pemrograman Web";
+      function foo() {
+        var a = "Belajar JavaScript";
+        console.log("a didalam function: " + a);
+      }
+      foo(); // a didalam function: Belajar JavaScript
+      console.log("a diluar function: " + a); // a diluar function: Belajar Pemrograman Web
+    </script>
+  </body>
+</html>
