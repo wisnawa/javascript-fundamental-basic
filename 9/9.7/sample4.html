@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spread Operator untuk Argument</title>
+  </head>
+  <body>
+    <h1>spread Operator untuk Argument</h1>
+    <script>
+      // menggunakan perulangan for
+      function rata2(...semuaArg) {
+        var totalArg = semuaArg.length;
+        var hasil = 0;
+        for (var i of semuaArg) {
+          hasil = hasil + i;
+        }
+        return hasil / totalArg;
+      }
+      var a = rata2(1, 9);
+      console.log(a); // 5
+      var b = rata2(4, 8, 3, 7);
+      console.log(b); // 5.5
+      var c = rata2(14, 34, 17, 55, 98, 22, 26);
+      console.log(c); // 38
+    </script>
+  </body>
+</html>

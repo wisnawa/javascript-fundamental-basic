@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argument Object</title>
+  </head>
+  <body>
+    <h1>Argument Object</h1>
+    <script>
+      function angka() {
+        var totaArg = arguments.length;
+        return totaArg;
+      }
+
+      var a = angka(1, 9);
+      console.log(a); // 2
+      var b = angka(4, 8, 3, 7);
+      console.log(b); // 4
+      var c = angka(3, 9, 1, 4, 6, 9, 0);
+      console.log(c); // 7
+    </script>
+  </body>
+</html>
