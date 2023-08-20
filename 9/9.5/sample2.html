@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Argument</title>
+  </head>
+  <body>
+    <h1>Default Argument</h1>
+    <script>
+      // hanya ada 2 default argument.
+      function rata2(a, b, c = 10, d = 10) {
+        var hasil = (a + b + c + d) / 4;
+        return hasil;
+      }
+      var nilai1 = rata2(20);
+      console.log(nilai1); // NaN
+
+      var nilai2 = rata2(20, 40);
+      console.log(nilai2); // 20
+
+      var nilai3 = rata2(5, 5, 5, 5);
+      console.log(nilai3); // 5
+    </script>
+  </body>
+</html>
