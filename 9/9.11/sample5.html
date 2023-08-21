@@ -8,7 +8,15 @@
   <body>
     <h1>Function First-Class Citizen</h1>
     <script>
-      // hal: 178
+      function foo(apa) {
+        alert(apa);
+      }
+
+      function salam(bar) {
+        bar("Selamat Malam");
+      }
+      // pengiriman function sebagai argument.
+      salam(foo);
     </script>
   </body>
 </html>
