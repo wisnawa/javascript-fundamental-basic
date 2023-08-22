@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Property</title>
+  </head>
+  <body>
+    <h1>Object Property</h1>
+    <script>
+      var absensi = {
+        1: "Budi Candra",
+      };
+      console.log(absensi[1]); // Budi Candra
+      console.log(absensi["1"]); // Budi Candra
+      console.log(absensi.1); // Uncaught SyntaxError: missing ) after argument list
+    </script>
+  </body>
+</html>

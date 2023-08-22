@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Property</title>
+  </head>
+  <body>
+    <h1>Object Property</h1>
+    <script>
+      var mahasiswa = {
+        // property name yang mengandung spasi
+        "nama lengkap": "Putu Gede Wisnawa",
+        "jurusan kuliah": "Sistam Informasi",
+        "nilai IPK": 3.88,
+        "semester terakhir": 4,
+      };
+      // pemanggilan property name dengan "[]" tidak akan error walaupun property name mangandung spasi.
+      console.log(mahasiswa["nama lengkap"]);
+      //   pemanggilan value property dengan "." akan error karena property name mangandung spasi.
+      console.log(mahasiswa.nama lengkap); // // SyntaxError: missing ) after argument list
+    </script>
+  </body>
+</html>
