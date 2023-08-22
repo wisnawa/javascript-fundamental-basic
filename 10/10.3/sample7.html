@@ -8,12 +8,13 @@
   <body>
     <h1>Object Property</h1>
     <script>
-      var absensi = {
-        1: "Budi Candra",
-      };
-      console.log(absensi[1]); // Budi Candra
-      console.log(absensi["1"]); // Budi Candra
-      console.log(absensi.1); // Uncaught SyntaxError: missing ) after argument list
+        var absensi = {
+          1: "Budi Candra",
+        };
+        console.log(absensi[1]); // Budi Candra
+        console.log(absensi["1"]); // Budi Candra
+      //   pemanggilan property name number dengan tanda dot notation "." tidak boleh!!
+        console.log(absensi.1); // Uncaught SyntaxError: missing ) after argument list
     </script>
   </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Property</title>
+  </head>
+  <body>
+    <h1>Object Property</h1>
+    <script>
+      var mahasiswa = {
+        nama: "Budi Candra",
+      };
+      console.log(mahasiswa.nama); // Budi Candra
+      console.log(mahasiswa["nama"]); // Budi Candra
+      //   error
+      console.log(mahasiswa[nama]); // Uncaught ReferenceError: nama is not defined
+    </script>
+  </body>
+</html>
