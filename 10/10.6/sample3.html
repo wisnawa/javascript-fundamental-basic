@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <h1>Object Method</h1>
+    <script>
+      var mobil = {
+        merk: "Honda Jazz",
+        tipe: "Sedan",
+        harga: 33000000,
+        warna: "Merah",
+      };
+      // running method setelah object devinition.
+      mobil.hidupkan = function () {
+        return "Hidupkan Mesin Mobil";
+      };
+      console.log(mobil.hidupkan()); // Hidupkan Mesin Mobil
+
+      mobil.pergi = function (tempat) {
+        return "Kita menuju daerah " + tempat;
+      };
+      console.log(mobil["pergi"]("Wisata Ubud")); // Kita menuju daerah Wisata Ubud
+    </script>
+  </body>
+</html>

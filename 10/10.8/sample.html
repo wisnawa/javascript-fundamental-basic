@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Nested Object</title>
+  </head>
+  <body>
+    <h1>Nested Object</h1>
+    <script>
+      var mahasiswa = {
+        nama: "Putu Andi",
+        jurusan: "Teknik Komputer",
+        ipk: {
+          1: 3.3,
+          2: 3.6,
+          3: 3.7,
+        },
+        semester: 4,
+      };
+      // running object dengan bracket notation
+      console.log(mahasiswa.ipk[1]); // 3.3
+      console.log(mahasiswa.ipk[2]); // 3.6
+      console.log(mahasiswa.ipk[3]); // 3.7
+    </script>
+  </body>
+</html>

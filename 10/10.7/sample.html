@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengubah Object Method</title>
+  </head>
+  <body>
+    <h1>Mengubah Object Method</h1>
+    <script>
+      var mobil = {
+        merk: "Toyota Yaris",
+        tipe: "MPV",
+        harga: 20000000,
+        waran: "merah",
+        pergi: function (tempat) {
+          return "Pergi ke " + tempat;
+        },
+      };
+      // running method dengan dot notation.
+      console.log(mobil.pergi("Gianyar")); // Pergi ke Gianyar
+
+      //   update (mengubah) method.
+      mobil.pergi = function (daerah) {
+        return "Ke Objec wisatawan " + daerah;
+      };
+      console.log(mobil.pergi("Bedugul")); // Ke Objec wisatawan Bedugul
+
+      //   error method. Karena tertimpa.
+      mobil.pergi = "Ini akan erorr!!!";
+      console.log(mobil.pergi("Kuta")); // Uncaught TypeError: mobil.pergi is not a function
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <h1>Object Method</h1>
+    <script>
+      var mobil = {
+        merk: "Honda Jazz",
+        tipe: "Sedan",
+        harga: 25000000,
+        warna: "Putih",
+        // menuliskan agrument.
+        pergi: function (tempat) {
+          return "Pergi ke " + tempat;
+        },
+      };
+      // running method dengan dot notation.
+      console.log(mobil.pergi("Denpasar")); //Pergi ke Denpasar
+      // running method dengan bracket notation.
+      console.log(mobil["pergi"]("Kota Bandung")); //Pergi ke Kota Bandung
+    </script>
+  </body>
+</html>
