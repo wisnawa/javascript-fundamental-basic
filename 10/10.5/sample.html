@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengubah Nilai Object Property</title>
+  </head>
+  <body>
+    <h1>Mengubah Nilai Object Property</h1>
+    <script>
+      var mahasiswa = {
+        "Nama Lengkap": "Putu Wisnawa",
+        Jurusan: "Teknik Komputer",
+        "Nilai IPK": 3.67,
+        semester: 5,
+      };
+
+      console.log(mahasiswa["Nama Lengkap"]); // Putu Wisnawa
+      console.log(mahasiswa.Jurusan); // Teknik Komputer
+      console.log(mahasiswa["Nilai IPK"]); // 3.67
+      console.log(mahasiswa["semester"]); // 5
+
+      //   Update (mengubah) property value.
+      mahasiswa["Nama Lengkap"] = "I Putu Gede Wisnawa";
+      mahasiswa.Jurusan = "Sistem Informasi";
+      mahasiswa["Nilai IPK"] = 3.44;
+      mahasiswa.semester = 6;
+
+      console.log(mahasiswa["Nama Lengkap"]); // I Putu Gede Wisnawa
+      console.log(mahasiswa.Jurusan); // Sistem Informasi
+      console.log(mahasiswa["Nilai IPK"]); // 3.44
+      console.log(mahasiswa.semester); // 6
+    </script>
+  </body>
+</html>

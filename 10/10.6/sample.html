@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <h1>Object Method</h1>
+    <script>
+      var mobil = {
+        merk: "Toyota Yaris",
+        tipe: "MPV",
+        harga: 2000000,
+        warna: "Hitam",
+        hidupkan: function () {
+          return "Mesin Dihidupkan!!";
+        },
+      };
+      console.log(mobil.merk); // Toyota Yaris
+      console.log(mobil.tipe); // MPV
+      console.log(mobil["harga"]); // 2000000
+      console.log(mobil["warna"]); // Hitam
+
+      // running method dengan dot notation.
+      console.log(mobil.hidupkan()); //Mesin Dihidupkan!!
+      //running method dengan bracket notation.
+      console.log(mobil["hidupkan"]()); // Mesin Dihidupkan!!
+    </script>
+  </body>
+</html>
