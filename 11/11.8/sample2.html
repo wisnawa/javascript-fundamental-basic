@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Method</title>
+  </head>
+  <body>
+    <h1>Class Method</h1>
+    <script>
+      class Mobil {
+        // class argument constructor
+        constructor(merk, tipe, harga) {
+          this.merk = merk;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+        // method
+        hidupkan() {
+          return "Mesin " + this.merk + " dihidupkan!";
+        }
+      }
+
+      var mobilAnton = new Mobil("Honda Jazz");
+      console.log(mobilAnton.hidupkan()); // Mesin Honda Jazz dihidupkan!
+      console.log(mobilAnton.harga); // undefined, karean argument untuk harga belum diisi.
+
+      var mobilToni = new Mobil("Toyota Camry", "Sedan", 350000000);
+      console.log(mobilToni.hidupkan()); // Mesin Toyota Camry dihidupkan!
+      console.log(mobilToni.merk); // Toyota Camry
+      console.log(mobilToni.tipe); // Sedan
+      console.log(mobilToni["harga"]); // 350000000
+    </script>
+  </body>
+</html>

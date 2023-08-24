@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Method</title>
+  </head>
+  <body>
+    <h1>Class Method</h1>
+    <script>
+      class Mobil {
+        // class argument constructor
+        constructor(merk, tipe, harga) {
+          this.merk = merk;
+          this.tipe = tipe;
+          this.harga = harga;
+        }
+        // method argument
+        hidupkan() {
+          return "Mesin " + this.merk + " Dihidupkan!!";
+        }
+
+        pergi(tempat) {
+          return "Pergi ke " + tempat + " dengan " + this.merk;
+        }
+      }
+
+      var mobilAntoni = new Mobil("Toyota Camry", "Sedan", 350000000);
+      console.log(mobilAntoni.merk); // Toyota Camry
+      console.log(mobilAntoni.pergi("Bandung")); // Pergi ke Bandung dengan Toyota Camry
+      console.log(mobilAntoni.pergi("Bandung"), mobilAntoni.harga); // Pergi ke Bandung dengan Toyota Camry 350000000
+    </script>
+  </body>
+</html>

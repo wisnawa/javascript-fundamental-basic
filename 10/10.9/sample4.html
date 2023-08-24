@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Reference</title>
+  </head>
+  <body>
+    <h1>Object Reference</h1>
+    <script>
+      // object yang tidak berupa reference.
+      var mahasiswa = {
+        nama: "Andi",
+        jurusan: "Teknik Komputer",
+      };
+      var mahasiswaBaru = {
+        nama: "Andi",
+        jurusan: "Teknik Komputer",
+      };
+
+      console.log(mahasiswa == mahasiswaBaru); // false
+      console.log(mahasiswa === mahasiswaBaru); // false
+    </script>
+  </body>
+</html>

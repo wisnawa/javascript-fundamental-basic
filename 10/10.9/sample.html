@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Reference</title>
+  </head>
+  <body>
+    <h1>Object Reference</h1>
+    <script>
+      var mahasiswa = "Putu Wisnawa";
+      var mahasiswaBaru = mahasiswa;
+      console.log(mahasiswa); // Putu Wisnawa
+      console.log(mahasiswaBaru); // Putu Wisnawa
+
+      mahasiswaBaru = "Nyoman Candra";
+      console.log(mahasiswa); // Putu Wisnawa
+      console.log(mahasiswaBaru); // Nyoman Candra
+
+      mahasiswa = "Ketut Eka";
+      console.log(mahasiswa); // Ketut Eka
+      console.log(mahasiswaBaru); // Nyoman Candra
+    </script>
+  </body>
+</html>

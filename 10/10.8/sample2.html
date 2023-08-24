@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Object</title>
+  </head>
+  <body>
+    <h1>Nested Object</h1>
+    <script>
+      var mahasiswa = {
+        nama: "Putu Dody",
+        jurusan: "Sistem Infomasi",
+        IPK: {
+          Semester1: 3.4,
+          Semester2: 3.3,
+          Semester3: 3.7,
+          Semester4: 3.5,
+        },
+        semester: "5 Ganjil",
+      };
+      // running object dengan dot notation.
+      console.log(mahasiswa.IPK.Semester1); // 3.4
+      console.log(mahasiswa.IPK.Semester2); // 3.3
+      console.log(mahasiswa.IPK.Semester3); // 3.7
+      console.log(mahasiswa.IPK.Semester4); // 3.5
+    </script>
+  </body>
+</html>

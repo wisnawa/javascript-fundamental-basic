@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Property</title>
+  </head>
+  <body>
+    <h1>Class Property</h1>
+    <script>
+      // penggunaan method constructor
+
+      //   creat (membuat) property
+      class Mobil {
+        constructor() {
+          this["merk"] = "Daihatsu Xenia"; // bracket notation
+          this.tipe = "MPV"; // dot notation
+          this.harga = 2000000; // dot notation
+        }
+      }
+      //   running object menggunakan dot notation
+      var mobilAndi = new Mobil();
+      console.log(mobilAndi.merk); // Daihatsu Xenia
+      // running object menggunakan bracket notation.
+      var mobilJoko = new Mobil();
+      console.log(mobilJoko["tipe"]);
+      //   running object menggunakan dot notation
+      var mobilBudi = new Mobil();
+      console.log(mobilBudi.harga); // 2000000
+    </script>
+  </body>
+</html>

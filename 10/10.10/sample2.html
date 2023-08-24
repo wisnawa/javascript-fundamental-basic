@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perulangan FOR IN</title>
+  </head>
+  <body>
+    <h1>Perulangan FOR IN</h1>
+    <script>
+      var mobil = {
+        nama: "Honda Jazz",
+        tipe: "MPV",
+        harga: 25000000,
+        warna: "merah",
+      };
+
+      var prof;
+      for (prof in mobil) {
+        // karena value dari property selalu berubah lebih baik menggunakan braket notaion.
+        console.log("Isi property " + prof + " = " + mobil[prof]);
+      }
+    </script>
+  </body>
+</html>
