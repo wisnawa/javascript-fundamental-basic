@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Object dengan Constructor Functions</title>
+  </head>
+  <body>
+    <h1>Membuat Object dengan Constructor Functions</h1>
+    <script>
+      // constructor functions
+      function Mobil(merk, tipe, harga) {
+        this.merk = merk;
+        this.tipe = tipe;
+        this.harga = harga;
+        // function expression
+        this.hidupkan = function () {
+          return "Mesin Dihidupkan";
+        };
+        this.pergi = function (tempat) {
+          return (
+            "Pergi ke " + tempat + " dengan mengendarai mobil " + this.merk
+          );
+        };
+      }
+
+      var mobilCandra = new Mobil("Honda Jazz", "MPV", 25000000);
+      console.log(mobilCandra.pergi("Kota Bandung")); // Pergi ke Kota Bandung dengan mengendarai mobil Honda Jazz
+    </script>
+  </body>
+</html>
