@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.parseInt()</title>
+  </head>
+  <body>
+    <h1>Method Number.parseInt()</h1>
+    <script>
+      console.log(Number.parseInt("10101101", 2)); //173
+      console.log(Number.parseInt("255", 8)); // 173
+      console.log(Number.parseInt("AD", 16)); // 173
+      console.log(Number.parseInt(173, 10)); // 173
+      console.log(Number.parseInt(10101101, 2)); // 173
+      console.log(Number.parseInt("173 ikan", 10)); //173
+    </script>
+  </body>
+</html>

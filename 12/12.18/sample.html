@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.prototype.toExponential</title>
+  </head>
+  <body>
+    <h1>Method Number.prototype.toExponential</h1>
+    <script>
+      var foo = 5000.123456789;
+      console.log(foo.toExponential()); // 5.000123456789e+3
+      console.log(foo.toExponential(1)); // 5.0e+3
+      console.log(foo.toExponential(5)); // 5.00012e+3
+      console.log(foo.toExponential(10)); // 5.0001234568e+3
+      console.log(foo.toExponential(20)); // 5.00012345678899964696e+3
+
+      //   langung tanpa di masukkan dalam variable.
+      console.log((4.32345).toExponential(2)); // 4.32e+0
+    </script>
+  </body>
+</html>
