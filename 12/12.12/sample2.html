@@ -8,16 +8,15 @@
   <body>
     <h1>Method Number.isNaN()</h1>
     <script>
-      // method object number
-      var foo = 5;
-      console.log(Number.isNaN(foo)); // false
+      // gunakan cara ini
+      var foo = NaN;
+      console.log(Number.isNaN(foo)); // true
 
-      var bar = 5 / "a";
-      console.log(Number.isNaN(bar)); // true
+      var bar = NaN == NaN;
+      console.log(bar); // false
 
-      // property object number
-      var baz = Number.NaN;
-      console.log(Number.isNaN(baz)); //true
+      var baz = NaN === NaN;
+      console.log(baz); // false
     </script>
   </body>
 </html>

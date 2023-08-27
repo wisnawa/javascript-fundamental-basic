@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.isInteger dan Number.isSafeInteger</title>
+  </head>
+  <body>
+    <h1>Method Number.isInteger dan Number.isSafeInteger</h1>
+    <script>
+      var foo = 6;
+      console.log(Number.isInteger(foo)); // true
+      console.log(Number.isSafeInteger(foo)); // true
+
+      var bar = 3.21456;
+      console.log(Number.isInteger(bar)); // false
+      console.log(Number.isSafeInteger(bar)); // false
+
+      var baz = 1 / 0;
+      console.log(Number.isInteger(baz)); // false
+      console.log(Number.isSafeInteger(baz)); // false
+
+      var foo2 = 9007199254740992;
+      console.log(Number.isInteger(foo2)); // true
+      console.log(Number.isSafeInteger(foo2)); // false
+    </script>
+  </body>
+</html>

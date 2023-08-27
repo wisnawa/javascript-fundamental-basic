@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.parseFloat()</title>
+  </head>
+  <body>
+    <h1>Method Number.parseFloat()</h1>
+    <script>
+      var foo = "1234";
+      console.log(typeof foo); // string
+
+      foo = Number.parseFloat(foo);
+      console.log(foo); // 1234
+      console.log(typeof foo); // number
+
+      var bar = "-1234.5678";
+      console.log(typeof bar); // string
+
+      bar = Number.parseFloat(bar);
+      console.log(bar); // -1234.5678
+      console.log(typeof bar); // number
+
+      console.log(Number.parseFloat("12.045 potong ayam")); // 12.045
+      console.log(Number.parseFloat("Ada 12.045 potong ayam")); // NaN
+
+      var baz = "22.234 potong ayam";
+      baz = Number.parseFloat(baz);
+      console.log(baz); // 22.234
+      console.log(typeof baz); // number
+    </script>
+  </body>
+</html>

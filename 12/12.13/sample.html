@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Numbar.isFinite()</title>
+  </head>
+  <body>
+    <h1>Method Numbar.isFinite()</h1>
+    <script>
+      // type data primitif
+      var foo = 9;
+      // method object number
+      console.log(Number.isFinite(foo)); // true
+
+      var bar = 3.21456;
+      console.log(Number.isFinite(bar)); // true
+
+      var baz = "a";
+      console.log(Number.isFinite(baz)); // false
+
+      var foo2 = 1 / 0;
+      console.log(Number.isFinite(foo2)); // false
+
+      //   property object number.
+      var bar2 = Number.NEGATIVE_INFINITY;
+      // method object number
+      console.log(Number.isFinite(bar2)); // false
+
+      var baz2 = Number.NaN;
+      console.log(Number.isFinite(baz2)); // false
+    </script>
+  </body>
+</html>

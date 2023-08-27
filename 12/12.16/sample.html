@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.parseInt()</title>
+  </head>
+  <body>
+    <h1>Method Number.parseInt()</h1>
+    <script>
+      var foo = "12345";
+      console.log(typeof foo); // string
+
+      foo = Number.parseInt(foo);
+      console.log(foo); // 12345
+      console.log(typeof foo); // number
+
+      var bar = "-1234.5678";
+      console.log(typeof bar); // string
+
+      bar = Number.parseInt(bar);
+      console.log(bar); // -1234
+      console.log(typeof bar); // number
+
+      console.log(Number.parseInt("12.045 potong ayam")); // 12
+      console.log(Number.parseInt("Ada 12.045 potong ayam")); // NaN
+    </script>
+  </body>
+</html>
