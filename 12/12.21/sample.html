@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.prototype.toString()</title>
+  </head>
+  <body>
+    <h1>Method Number.prototype.toString()</h1>
+    <script>
+      var foo = 112;
+      console.log(typeof foo); // number
+
+      bar = foo.toString();
+      console.log(bar); // 112
+      console.log(typeof bar); // string
+
+      var foo1 = new Number(112);
+      console.log(typeof foo1); // object
+
+      bar1 = foo1.toString();
+      console.log(typeof bar1); // string
+      console.log(bar1); // 112
+    </script>
+  </body>
+</html>

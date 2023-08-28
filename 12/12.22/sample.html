@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Number.prototype.toLocalString()</title>
+  </head>
+  <body>
+    <h1>Method Number.prototype.toLocaleString()</h1>
+    <script>
+      var foo = 1234500.346;
+
+      console.log(foo.toString()); // 1234500.346
+      //   menggunakna sistem (locale)
+      console.log(foo.toLocaleString()); // 1,234,500.346
+
+      //   pengisian argument value
+      console.log(foo.toLocaleString("id-ID")); // 1.234.500,346
+      console.log(foo.toLocaleString("en-GB")); // 1,234,500.346
+      console.log(foo.toLocaleString("fr-FR")); // 1 234 500,346
+      console.log(foo.toLocaleString("ar-SA")); // ١٬٢٣٤٬٥٠٠٫٣٤٦
+
+      //
+      console.log(foo.toLocaleString("en-US", { style: "decimal" })); // 1,234,500.346
+      console.log(foo.toLocaleString("en-US", { style: "percent" })); // 123,450,035%
+      console.log(
+        foo.toLocaleString("en-US", { style: "currency", currency: "USD" })
+      ); // $1,234,500.35
+      console.log(
+        foo.toLocaleString("de-DE", { style: "currency", currency: "EUR" })
+      ); // 1.234.500,35 €
+      console.log(
+        foo.toLocaleString("ja-JP", { style: "currency", currency: "JPY" })
+      ); // ￥1,234,500
+      console.log(
+        foo.toLocaleString("id-ID", { style: "currency", currency: "IDR" })
+      ); // Rp 1.234.500,35
+    </script>
+  </body>
+</html>
