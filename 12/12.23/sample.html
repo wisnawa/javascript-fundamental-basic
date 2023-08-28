@@ -7,6 +7,13 @@
   </head>
   <body>
     <h1>Method Number.prototype.valueOf()</h1>
-    <script></script>
+    <script>
+      var foo = new Number(230);
+      console.log(typeof foo); // object
+
+      bar = foo.valueOf();
+      console.log(typeof bar); // number
+      console.log(bar); // 230
+    </script>
   </body>
 </html>
