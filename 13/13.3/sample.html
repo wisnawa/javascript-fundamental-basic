@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hal 244</title>
+    <title>Method Math.ceil(x), Math.floor(x), dan Math.round(x)</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Method Math.ceil(x), Math.floor(x), dan Math.round(x)</h1>
+    <script>
+      var foo = 12.5;
+
+      console.log(Math.ceil(foo)); // 13
+      console.log(Math.floor(foo)); // 12
+      console.log(Math.round(foo)); // 13 (biasanya menggunakan method ini untuk sen rupiah di accounting.)
+
+      var bar = 12.4;
+
+      console.log(Math.ceil(bar)); // 13
+      console.log(Math.floor(bar)); // 12
+      console.log(Math.round(bar)); // 12
+
+      var baz = 12.1354;
+
+      console.log(Math.ceil(baz)); // 13
+      console.log(Math.floor(baz)); // 12
+      console.log(Math.round(baz)); // 12
+
+      console.log(Math.ceil(baz * 1000) / 1000); // 12.136
+      console.log(Math.floor(baz * 1000) / 1000); // 12.135
+      console.log(Math.round(baz * 1000) / 1000); // 12.135
+    </script>
+  </body>
 </html>
