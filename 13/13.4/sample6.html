@@ -8,15 +8,13 @@
   <body>
     <h1>Method Math.random()</h1>
     <script>
-      // agar angka 10 dapat muncul
-      var foo = Math.random();
-      console.log(foo); // 0.921818065477047
+      // generate angka acak sebanyak 10 buah
+      var foo = [];
 
-      foo = foo * (10 + 1);
-      console.log(foo); // 10.139998720247517
-
-      foo = Math.floor(foo);
-      console.log(foo); // 10
+      for (var i = 0; i < 10; i++) {
+        foo[i] = 1 + Math.floor(Math.random() * 6);
+      }
+      console.log(foo); // Array(10) [ 4, 3, 5, 6, 1, 2, 1, 5, 5, 4 ]
     </script>
   </body>
 </html>

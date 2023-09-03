@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.fromCharCode() dan String.fromCodePoint()</title>
+  </head>
+  <body>
+    <h1>Method String.fromCharCode() dan String.fromCodePoint()</h1>
+    <script>
+      console.log(String.fromCodePoint(65)); // A
+      console.log(String.fromCodePoint(65, 66, 67)); // ABC
+      console.log(String.fromCodePoint(0x2615, 0x2744, 0x2f40)); // ☕❄⽀
+      console.log(String.fromCodePoint(9749, 10052, 12096)); // ☕❄⽀
+      console.log(String.fromCodePoint(128656, 128663, 128690)); // 🚐🚗🚲 (Unicode bisa ditampilkan)
+    </script>
+  </body>
+</html>

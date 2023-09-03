@@ -8,14 +8,8 @@
   <body>
     <h1>Method Math.random()</h1>
     <script>
-      // agar angka 10 dapat muncul
-      var foo = Math.random();
-      console.log(foo); // 0.921818065477047
-
-      foo = foo * (10 + 1);
-      console.log(foo); // 10.139998720247517
-
-      foo = Math.floor(foo);
+      // penggabungan ketiga langkah sebelumnya.
+      var foo = Math.floor(Math.random() * (10 + 1));
       console.log(foo); // 10
     </script>
   </body>

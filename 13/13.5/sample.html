@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehtod Math.max() dan Math.min()</title>
+  </head>
+  <body>
+    <h1>Mehtod Math.max() dan Math.min()</h1>
+    <script>
+      var foo = Math.max(45, 90, 12, 55, 19, 75);
+      console.log(foo); // 90
+      var bar = Math.min(45, 90, 12, 55, 19, 75);
+      console.log(bar); // 12
+
+      //   dengan bantuan spread operator.
+      var baz = [45, 90, 12, 55, 19, 75];
+      baz = Math.max(...baz);
+      console.log(baz); // 90
+    </script>
+  </body>
+</html>

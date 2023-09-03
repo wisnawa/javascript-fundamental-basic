@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Math.max() dan Math.min()</title>
+  </head>
+  <body>
+    <h1>Method Math.max() dan Math.min()</h1>
+    <script>
+      //   dengan bantuan spread operator.
+      var foo = [45, 90, 12, 55, 19, 75];
+      foo = Math.max(...foo);
+      console.log(foo); // 90
+
+      var bar = [45, 90, 12, 55, 19, 75];
+      bar = Math.min(...bar);
+      console.log(bar); // 12
+
+      var baz = [45, 90, 12, 55, 19, 75];
+      console.log(Math.max(...baz)); // 90
+
+      var baz2 = [45, 90, 12, 55, 19, 75];
+      console.log(Math.min(...baz2)); // 12
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Math.pow()</title>
+  </head>
+  <body>
+    <h1>Method Math.pow()</h1>
+    <script>
+      console.log(Math.pow(5, 2)); // 25
+      console.log(Math.pow(2, 8)); // 256
+      console.log(Math.pow(49, 1 / 2)); // 7
+      console.log(Math.pow(6561, 1 / 4)); // 9
+      console.log(Math.pow(-49, 1 / 2)); // NaN
+
+      //   dengan bantuan spread operator.
+      var foo = [5, 2];
+      console.log(foo[0]); // 5
+      console.log(foo[1]); // 4
+
+      foo = Math.pow(...foo);
+      console.log(foo); // 25
+    </script>
+  </body>
+</html>
