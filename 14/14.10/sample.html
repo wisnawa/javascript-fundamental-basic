@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.substring()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.substring()</h1>
+    <script>
+      var foo = "BelajarJavaScript";
+      console.log(foo.substring(2)); // lajarJavaScript
+      console.log(foo.substring(3, 4)); // a
+      console.log(foo.substring(3, 12)); // ajarJavaS
+      console.log(foo.substring(3, 0)); // Bel
+      console.log(foo.substring(-3)); // BelajarJavaScript
+      console.log(foo.substring(-3, 12)); // BelajarJavaS
+      console.log(foo.substring(-3, -1)); // <empty string>
+      console.log(foo); // BelajarJavaScript
+    </script>
+  </body>
+</html>
