@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.trim()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.trim()</h1>
+    <script>
+      var username = "    Putu Wisnawa ";
+      username = username.trim();
+      if (username === "Putu Wisnawa") {
+        console.log("Selamat Datang " + username); // Selamat Datang Putu Wisnawa
+      } else {
+        console.log("User Name yang anda input salah!!");
+      }
+
+      var username2 = "    Putu Wisnawa ";
+      if (username2.trim() === "Putu Wisnawa") {
+        console.log("Selamat Datang " + username2.trim()); // Selamat Datang Putu Wisnawa
+      } else {
+        console.log("User Name yang anda input salah!!");
+      }
+    </script>
+  </body>
+</html>

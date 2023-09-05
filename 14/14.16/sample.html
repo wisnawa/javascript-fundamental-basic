@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Method String.prototype.startsWith() dan String.prototype.endsWith()
+    </title>
+  </head>
+  <body>
+    <h1>
+      Method String.prototype.startsWith() dan String.prototype.endsWith()
+    </h1>
+    <script>
+      var foo = "Belajar JavaScript From Zero to Hero bro";
+      console.log(foo.startsWith("Belajar")); // true
+      console.log(foo.startsWith("From Zero")); // false
+      console.log(foo.startsWith("Belajar JavaScript From Zero")); // true
+      console.log(foo.endsWith("bro")); // true
+      console.log(foo.endsWith("Hero")); // false
+      console.log(foo.endsWith("Hero bro")); // true
+      console.log(foo.startsWith("From Zero", 19)); // true
+      console.log(foo.endsWith("JavaScript", 18)); // true
+
+      var bar = "Belajar JavaScript ";
+      bar = bar.length;
+      console.log(bar); // 19
+      console.log(foo.startsWith("From Zero", bar)); // true
+
+      var baz = "Belajar JavaScript";
+      baz = baz.length;
+      console.log(baz); // 18
+      console.log(foo.endsWith("JavaScript", baz)); // true
+    </script>
+  </body>
+</html>

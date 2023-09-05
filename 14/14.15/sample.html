@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.includes()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.includes()</h1>
+    <script>
+      var foo = "Belajar JavaScript From Zero to Hero bro";
+      console.log(foo.includes("From")); // true
+      console.log(foo.includes("JavaScript")); // true
+      console.log(foo.includes("javascript")); // false
+      console.log(foo.includes("Belajar")); // true
+      console.log(foo.includes("Belajar", 1)); // false
+      console.log(foo.includes("elajar", 1)); // true
+    </script>
+  </body>
+</html>

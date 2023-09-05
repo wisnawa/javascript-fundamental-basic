@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.split()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.split()</h1>
+    <script>
+      var foo = "Belajar";
+      console.log(foo.split()); // Array [ "Belajar" ]
+      console.log(foo.split("")); // Array(7) [ "B", "e", "l", "a", "j", "a", "r" ]
+
+      var bar = "Satu Dua tiga empat Lima";
+      console.log(bar.split(" ")); // Array(5) [ "Satu", "Dua", "tiga", "empat", "Lima" ]
+      console.log(bar.split(",")); // Array [ "Satu Dua tiga empat Lima" ]
+
+      var baz = "Satu Dua tiga empat Lima";
+      console.log(baz.split(" ", 3)); // Array(3) [ "Satu", "Dua", "tiga" ]
+      console.log(baz.split(" ", 7)); // Array(5) [ "Satu", "Dua", "tiga", "empat", "Lima" ]
+    </script>
+  </body>
+</html>

@@ -8,7 +8,31 @@
   <body>
     <h1>Method String.prototype.slice()</h1>
     <script>
-      //261
+      var foo = "BelajarJavaScript";
+      console.log(foo.slice(3)); // ajarJavaScript
+      console.log(foo.slice(3, 4)); // a
+      console.log(foo.slice(3, 12)); // ajarJavaS
+
+      console.log(foo.slice(-3)); // ipt
+      console.log(foo.slice(-3, 12)); // <empty string>
+      console.log(foo.slice(-3, -1)); // ip
+      console.log(foo); // BelajarJavaScript
+
+      var bar = "Belajar JavaScript";
+      console.log(bar.slice(3)); // ajar JavaScript
+      console.log(bar.slice(3, 4)); // a
+      console.log(bar.slice(3, 12)); // ajar Java (spaci dihitung juga)
+
+      console.log(bar.slice(-3)); // ipt
+      console.log(bar.slice(-3, -4)); // <empty string>
+      console.log(bar.slice(-3, -1)); //ip
+      console.log(bar); // Belajar JavaScript
+
+      var baz = "Belajar JavaScipt";
+      baz = baz.slice(3);
+      console.log(baz); // ajar JavaScipt
+      baz = baz.toUpperCase();
+      console.log(baz); // AJAR JAVASCIPT
     </script>
   </body>
 </html>
