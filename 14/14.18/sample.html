@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Method String.prototype.toString() dan String.prototype.valueOf()
+    </title>
+  </head>
+  <body>
+    <h1>Method String.prototype.toString() dan String.prototype.valueOf()</h1>
+    <script>
+      var foo = new String("Belajar JavaScript");
+      console.log(typeof foo); // object
+      console.log(foo); // String { "Belajar JavaScript" }
+
+      var bar = foo.toString();
+      console.log(typeof bar); // string
+      console.log(bar); // Belajar JavaScript
+
+      var baz = foo.valueOf();
+      console.log(typeof baz); // string
+      console.log(baz); // Belajar JavaScript
+    </script>
+  </body>
+</html>
