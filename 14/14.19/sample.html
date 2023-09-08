@@ -8,7 +8,16 @@
   <body>
     <h1>Method String.prototype.indexOf()</h1>
     <script>
-      // 268
+      var foo = "Belajar JavaScript form Zero to Hero";
+      console.log(foo.indexOf("JavaScript")); // 8
+      console.log(foo.indexOf("Zero")); // 24
+      console.log(foo.indexOf("Belajar")); // 0
+      console.log(foo.indexOf("zero")); // -1 (index tidak ditemukan)
+
+      var bar = "Belajar JavaScript form Zero to Hero JavaScript";
+      console.log(bar.indexOf("JavaScript")); // 8
+      console.log(bar.indexOf("JavaScript", 10)); // 37
+      console.log(bar.indexOf("JavaScript", 38)); // -1 (index tidak ditemukan)
     </script>
   </body>
 </html>

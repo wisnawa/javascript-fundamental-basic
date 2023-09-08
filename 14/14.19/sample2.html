@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.indexOf()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.indexOf()</h1>
+    <script>
+      var foo = "Belajar JavaScript form Zero to Hero JavaScript";
+      var count = 0;
+      var posisi = foo.indexOf("a");
+
+      while (posisi !== -1) {
+        count++;
+        posisi = foo.indexOf("a", posisi + 1);
+      }
+      console.log(count); // 6
+    </script>
+  </body>
+</html>

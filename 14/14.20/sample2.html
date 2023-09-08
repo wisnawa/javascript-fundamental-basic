@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.lastIndexOf()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.lastIndexOf()</h1>
+    <script>
+      var foo = "Belajar JavaScript form Zero to Hero";
+      var count = 0;
+      var posisi = foo.lastIndexOf("a");
+
+      while (posisi !== -1) {
+        count++;
+        posisi = foo.lastIndexOf("a", posisi - 1);
+      }
+      console.log(count); // 4
+    </script>
+  </body>
+</html>
