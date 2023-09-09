@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.replace()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.replace()</h1>
+    <script>
+      var foo = "Belajar JavaScript form Zero to Hero JavaScript";
+      //   menggunakan regex
+      console.log(foo.replace("JavaScript", "PHP")); // Belajar PHP form Zero to Hero JavaScript
+      console.log(foo.replace(/JavaScript/g, "PHP")); // Belajar PHP form Zero to Hero PHP
+      console.log(foo.replace(/javascript/gi, "PHP")); //Belajar PHP form Zero to Hero PHP
+      console.log(foo.replace(/a/g, "u")); // Belujur JuvuScript form Zero to Hero JuvuScript
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method String.prototype.match()</title>
+  </head>
+  <body>
+    <h1>Method String.prototype.match()</h1>
+    <script>
+      var foo =
+        "1 jam sama dengan 60 menit. Juga sama dengan 3600 detik, makan lele";
+      //   menggunakan regex
+      console.log(foo.match(/\d+/g)); // Array(3) [ "1", "60", "3600" ]
+      console.log(foo.match(/\w*e\w*/g)); // Array(5) [ "dengan", "menit", "dengan", "detik", "lele" ]
+    </script>
+  </body>
+</html>
