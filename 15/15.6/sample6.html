@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pola Character Set</title>
+  </head>
+  <body>
+    <h1>Pola Character Set</h1>
+    <script>
+      var pola = /[abcde]../;
+      console.log(pola.test("abaa")); // true
+      console.log(pola.test("1ba")); // false
+      console.log(pola.test("1bc")); // false
+      console.log(pola.test("1bcd")); // true
+      console.log(pola.test("belajar")); // true
+      console.log(pola.test("1abcde")); // true
+      console.log(pola.test("az")); // false
+      console.log(pola.test("azz")); // true
+      console.log(pola.test("bz")); // false
+      console.log(pola.test("bzz")); // true
+      console.log(pola.test("zbz")); // false
+      console.log(pola.test("zbzz")); // true
+      console.log(pola.test("zzbz")); // false
+      console.log(pola.test("zzbzz")); // true
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method RegExp.prototype.exec()</title>
+  </head>
+  <body>
+    <h1>Method RegExp.prototype.exec()</h1>
+    <script>
+      var foo = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+      var pola = /\d+/g;
+
+      var hasil1 = pola.exec(foo);
+      console.log(hasil1.index); // 0
+      console.log(hasil1[0]); // 1
+
+      var hasil2 = pola.exec(foo);
+      console.log(hasil2.index); // 18
+      console.log(hasil2[0]); // 60
+
+      var hasil3 = pola.exec(foo);
+      console.log(hasil3.index); // 45
+      console.log(hasil3[0]); // 3600
+    </script>
+  </body>
+</html>

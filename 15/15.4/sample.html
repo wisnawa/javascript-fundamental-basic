@@ -8,7 +8,17 @@
   <body>
     <h1>Method RegExp.prototype.test()</h1>
     <script>
-      // 276
+      var foo = "Belajar JavaScript form Zero to Hero JavaScript";
+      var pola = /JavaScript/;
+      var pola2 = /javascript/;
+      var pola3 = /javascript/i;
+      console.log(pola.test(foo)); // true
+      console.log(pola2.test(foo)); // false
+      console.log(pola3.test(foo)); // true
+
+      console.log(/zero/.test(foo)); // false
+      console.log(/zero/i.test(foo)); // true
+      console.log(/a/g.test(foo)); // true
     </script>
   </body>
 </html>

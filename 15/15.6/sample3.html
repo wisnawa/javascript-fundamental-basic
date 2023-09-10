@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membedakan Awal dan Akhir Pola</title>
+  </head>
+  <body>
+    <h1>Membedakan Awal dan Akhir Pola</h1>
+    <script>
+      var foo = "Belajar JavaScript";
+      console.log(/JavaScript/.test(foo)); // true
+      console.log(/^JavaScript/.test(foo)); // false
+      console.log(/JavaScript$/.test(foo)); // true
+      console.log(/^Belajar/.test(foo)); // true
+      console.log(/Script$/.test(foo)); // true
+
+      //   multiple flag
+      console.log(/^belajar/.test(foo)); // false
+      console.log(/^belajar/i.test(foo)); // true
+      console.log(/script$/.test(foo)); // false
+      console.log(/script$/i.test(foo)); // true
+    </script>
+  </body>
+</html>

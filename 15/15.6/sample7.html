@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pola Character Set</title>
+  </head>
+  <body>
+    <h1>Pola Character Set</h1>
+    <script>
+      var pola = /^[a-e][1-9][A-Z]./;
+      console.log(pola.test("a1234AA")); // false (karena chacarater number lebih dari satu)
+      console.log(pola.test("a1Az")); // true
+      console.log(pola.test("b2az")); // false (karena chacarater ketiga berhuruf kecil)
+      console.log(pola.test("b2Az")); // true
+      console.log(pola.test("c2A")); // false (karena chacrater bebas keempat tidak diisi)
+      console.log(pola.test("c2Ax")); // true
+      console.log(pola.test("f9AA")); // false (karena character pertama string tersebut diluar ketentuan)
+      console.log(pola.test("e9AA")); // true
+      console.log(pola.test("e0AA")); // false (karena character kedua number tesebut diluar ketentuan)
+    </script>
+  </body>
+</html>
