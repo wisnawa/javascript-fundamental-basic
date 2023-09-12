@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membatasi Jumlah Karakter</title>
+  </head>
+  <body>
+    <h1>Membatasi Jumlah Karakter</h1>
+    <script>
+      var pola = /A{2}1{3}/; // ada dua string A dan ada tiga number 1 minimal dan maximal bebas
+      console.log(typeof pola); // object
+      console.log(pola.test("AA111")); // true
+      console.log(pola.test("aa111")); // false (karena harus uppercase string A minimal sebanyak dua kali)
+      console.log(pola.test("A111")); // false (string A minimal dua)
+      console.log(pola.test("AAAA111")); // true (string A minimal dua maximal bebas)
+      console.log(pola.test("AB111")); // false (tidak boleh ada string selain A)
+      console.log(pola.test("AAA11111")); // true (String A minimal dua maximal bebas, number 1 minimal tiga maximal bebas)
+
+      var pola2 = /A{2}1{2,3}/;
+      console.log(pola2.test("AA11")); // true
+      console.log(pola2.test("AA111")); // true
+      console.log(pola2.test("AA1111")); // true
+      console.log(pola2.test("AAA111")); // true
+      console.log(pola2.test("AAZ111")); // false (karena character string Z tidak di izinkan selain string A lebihdari satu)
+      console.log(pola2.test("AA11234Z")); // true
+      console.log(pola2.test("AA11ZZ")); // true (number character minimal ada dua atau 3 selanjutnya wild card)
+      console.log(pola2.test("AA1ZZZZ")); // false (karena number 1 minimal dua)
+      console.log(pola2.test("AA2111")); // false (karena character setelah string A minimal dua kali selanjutnya harus character number 1 minimal dua atau tiga)
+
+      var pola3 = /A{1,}1{3,}/;
+      console.log(pola3.test("A111")); // true
+      console.log(pola3.test("AA111")); // true
+      console.log(pola3.test("AB111")); // false (karena character string B tidak diperbolahkan hanya A diperbolehkan)
+    </script>
+  </body>
+</html>

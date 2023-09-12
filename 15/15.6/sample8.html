@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pola Nagasi Character Set</title>
+  </head>
+  <body>
+    <h1>Pola Nagasi Character Set</h1>
+    <script>
+      var pola = /[^a-e]../;
+      console.log(pola.test("abaazz")); // false (karena character pertama tidak boleh ada string a-e)
+      console.log(pola.test("fabcd")); // true
+      console.log(pola.test("faa")); // true
+      console.log(pola.test("f1z")); // true
+      console.log(pola.test("f1zZZZZ")); // true
+      console.log(pola.test("JavaScript")); // true
+      console.log(pola.test("2223")); // true
+      console.log(pola.test("$$$$$$")); // true
+      console.log(pola.test("belajar")); // true
+      console.log(pola.test("fa")); // false (karena character wildcard minimal dua)
+      console.log(pola.test("abclll")); // true
+      console.log(pola.test("abcdexxx")); // true
+      console.log(pola.test("a123")); //true
+      console.log(pola.test("123")); // true (karena ini wild card yang harus lebih dari dua)
+
+      // kebalikan dari pola regexp diatas
+      var pola2 = /^[a-e]../;
+      console.log(pola2.test("abaazz")); // true
+      console.log(pola2.test("fabcd")); // false
+      console.log(pola2.test("faa")); // false
+      console.log(pola2.test("f1z")); // false
+      console.log(pola2.test("f1zZZZZ")); // false
+    </script>
+  </body>
+</html>

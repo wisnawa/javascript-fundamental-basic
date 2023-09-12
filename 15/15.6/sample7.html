@@ -18,6 +18,14 @@
       console.log(pola.test("f9AA")); // false (karena character pertama string tersebut diluar ketentuan)
       console.log(pola.test("e9AA")); // true
       console.log(pola.test("e0AA")); // false (karena character kedua number tesebut diluar ketentuan)
+      console.log(pola.test("e9AAz")); // true
+      console.log(pola.test("1e9AA")); // false (karena character pertama tidak boleh ada wildcard)
+
+      var pola2 = /^[a-e][0-9][A-Z].$/;
+      console.log(pola2.test("a0AAA")); // false (karena character wildcard hanya boleh satu)
+      console.log(pola2.test("a0AA")); // true
+      console.log(pola2.test("a1AA")); // true
+      console.log(pola2.test("a9AA")); // true
     </script>
   </body>
 </html>

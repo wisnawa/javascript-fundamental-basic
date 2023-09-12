@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+      var pola = /^[A-Z0-9]{2,}z{2}_$/; // character pertama ditentukan string A sampai Z atau number 0 sampai 9 minimal dua character maximal bebas, memiliki chacarater string lowercase z minimal dan maximal dua
+      console.log(pola.test("ABzz_")); // true
+      console.log(pola.test("ABCzz_")); // true
+      console.log(pola.test("A12zz_")); // true
+      console.log(pola.test("A123zz_")); // true (character pertama minimal dua maximal bebas)
+      //   halaman 286
+    </script>
+  </body>
+</html>
