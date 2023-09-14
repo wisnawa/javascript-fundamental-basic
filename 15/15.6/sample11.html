@@ -13,7 +13,10 @@
       console.log(pola.test("ABCzz_")); // true
       console.log(pola.test("A12zz_")); // true
       console.log(pola.test("A123zz_")); // true (character pertama minimal dua maximal bebas)
-      //   halaman 286
+
+      var pola2 = /^DK[0-9]{4}[A-Z]{2}$/; // harus memiliki character uppercase string DK, dilanjutkan dengan character number dari 0 sampai 9 minimal dan maximal empat character, dan dilanjutkan dengan character uppercase string dari A sampai Z minimal dan maximal dua character.
+      console.log(pola2.test("DK1111BB")); // true
+      console.log(pola2.test("DK11BB")); // false (karena character number kurang dari empat character)
     </script>
   </body>
 </html>

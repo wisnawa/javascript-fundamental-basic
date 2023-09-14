@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+      var pola = /ab*c/; // harus ada character lowercase a minimal satu character dilanjukan dengan character string lowercase b min dan max bebbas dan dilanjutkan dengan character string lowercase c min dan max satu character.
+      console.log(pola.test("ab")); // false (kurang character string lowercase c )
+      console.log(pola.test("abc")); // true
+      console.log(pola.test("abbc")); // true
+      console.log(pola.test("abbccc")); // true (karena character lowercase c maximal belum ada pembatas jadi bebas)
+      console.log(pola.test("bbcc")); // false (character string lowecase a harus ada minimal satu character)
+
+      //   pola2 ini sama dengan artinya dengan pola diatas
+      var pola2 = /ab{0,}c/;
+      console.log(pola2.test("ab")); // false
+      console.log(pola2.test("abc")); // true
+      console.log(pola2.test("abbc")); // true
+      console.log(pola2.test("abbccc")); // true
+      console.log(pola2.test("bbcc")); // false
+    </script>
+  </body>
+</html>
