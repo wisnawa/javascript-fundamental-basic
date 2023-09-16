@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pola logika OR</title>
+  </head>
+  <body>
+    <h1>Pola logika OR</h1>
+    <script>
+      var pola = /aku|dia|kami/; // cocok dengan character kalimat aku or dia or kami
+      console.log(pola.test("aku dan dia disini")); // true
+      console.log(pola.test("akami")); // true
+      console.log(pola.test('coba dengan kalimat "kami"')); // true
+    </script>
+  </body>
+</html>

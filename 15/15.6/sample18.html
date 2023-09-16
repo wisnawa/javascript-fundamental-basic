@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+      var pola = /^[A-Za-z]{1,2}\s\d{1,4}\s[A-Za-z]{1,3}$/;
+      console.log(pola.test("DK 123 BC")); // true
+      console.log(pola.test("DK  123 BC")); // false (whitespace maximal 1)
+    </script>
+  </body>
+</html>

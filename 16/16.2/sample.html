@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Array.isArray()</title>
+  </head>
+  <body>
+    <h2>Method Array.isArray()</h2>
+    <script>
+      var a = new Array("a", "b", "c", "d", "e");
+      var b = ["a", "b", "c", "d", "e"];
+      var c = "from zero to hero";
+      var d = 1234567890;
+      var e = true;
+      var f = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+      console.log(Array.isArray(a)); // true
+      console.log(typeof a); // object
+
+      console.log(Array.isArray(b)); // true
+      console.log(Array.isArray(c)); // false
+      console.log(Array.isArray(d)); // false
+      console.log(Array.isArray(e)); // false
+      console.log(Array.isArray(["budi", "candra", "dodik"])); // true
+      console.log(Array.isArray(f)); // true
+    </script>
+  </body>
+</html>
