@@ -5,5 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regular Expression</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+      var pola = /ab+c/; // harus ada character lowercase a minimal satu character, harus ada character string lowercase b minimal satu character maximal bisa lebih dari satu character, dan harus ada character string lowercase c minimal satu character.
+      console.log(pola.test("abc")); // true
+      console.log(pola.test("abbc")); // true
+      console.log(pola.test("bbc")); // false (character string lowercase a harus diisi minimal satu character)
+      console.log(pola.test("ac")); // false (character string lowercase b harus diisi minimal satu character)
+      console.log(pola.test("abb")); // false (character string lowercase c harus diisi minimal satu character)
+
+      //   pola2 sama artinya degan pola diatas
+      var pola2 = /ab{1,}c/;
+      console.log(pola2.test("abc")); // true
+      console.log(pola2.test("abbc")); // true
+      console.log(pola2.test("bbc")); // false (character string lowercase a harus diisi minimal satu character)
+      console.log(pola2.test("ac")); // false (character string lowercase b harus diisi minimal satu character)
+      console.log(pola2.test("abb")); // false (character string lowercase c harus diisi minimal satu character)
+    </script>
+  </body>
 </html>

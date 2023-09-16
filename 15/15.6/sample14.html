@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+      var pola = /ab?c/; // harus ada character string lowercase a minimal satu character, bolah ada atau tidak character string lowercase b, kalau ada character lowercase b hanya boleh maximal satu character, dan harus memiliki character c
+      console.log(pola.test("abc")); // true
+      console.log(pola.test("abbc")); // false (character string lowercase b hanya boleh diisi maximal satu character)
+      console.log(pola.test("ac")); // true
+      console.log(pola.test("bc")); // false (character string lowercase a harus ada minimal satu character)
+      console.log(pola.test("1231zzzzzabc")); // true
+      console.log(pola.test("1231zzzzzbc")); // false (karena character string lowercase a harus diisi minimal satu character)
+
+      // pola2 sama artinnya dengan pola diatas
+      var pola2 = /ab{0,1}c/;
+      console.log(pola2.test("abc")); // true
+      console.log(pola2.test("abbc")); // false (character string lowercase b hanya boleh diisi maximal satu character)
+      console.log(pola2.test("ac")); // true
+      console.log(pola2.test("bc")); // false (character string lowercase a harus ada minimal satu character)
+      console.log(pola2.test("1231zzzzzabc")); // true
+      console.log(pola2.test("1231zzzzzbc")); // false (karena character string lowercase a harus diisi minimal satu character)
+    </script>
+  </body>
+</html>
