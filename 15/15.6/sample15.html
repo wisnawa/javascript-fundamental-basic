@@ -8,8 +8,12 @@
   <body>
     <h1>Regular Expression</h1>
     <script>
-      var pola = /\d\w\s/;
-      //   hal 287
+      var pola = /\d\w\s/; // cocok dengan character number 0-9. cocok dengan character string uppercase dan lowercase, underscore. cocok dengan character whitespace.
+      console.log(pola.test("9a ")); // true
+      console.log(pola.test("5_ ")); // true
+      console.log(pola.test("zz4A bbb")); // true
+      console.log(pola.test("4- ")); // false (karena character - tidak cocok)
+      console.log(pola.test("2x")); // false (karena character whitespace harus diisikan)
     </script>
   </body>
 </html>

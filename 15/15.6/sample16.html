@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pola character khusus regular expression</title>
+  </head>
+  <body>
+    <h1>Pola character khusus regular expression</h1>
+    <script>
+      var pola = /www\.....\.com/;
+      console.log(pola.test("www.1234.com")); // true
+      console.log(pola.test("www.google.com")); // false (karena character yang ditentukan ada empat)
+
+      //   agar character pola www.google.com dapat value true
+      var pola2 = /www\..+\.com/;
+      console.log(pola2.test("www.google.com")); // true
+      console.log(pola2.test("www.facebook.com")); // true
+
+      // untuk pola2
+      var pola3 = /.+@.+\..+/;
+      console.log(pola3.test("coba@gmail.com")); // true
+      console.log(pola3.test("@gmail.com")); // false
+    </script>
+  </body>
+</html>
