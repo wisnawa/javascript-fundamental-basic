@@ -7,6 +7,20 @@
   </head>
   <body>
     <h1>Property Array.prototype.length</h1>
-    <!-- hal 292 -->
+    <script>
+      var foo = ["a", "b", "c", "d", "e"];
+      console.log(foo.length); // 5
+      console.log(foo); // Array(5) [ "a", "b", "c", "d", "e" ]
+
+      // delete dan create array
+      foo.length = 2;
+      console.log(foo.length); // 2
+      console.log(foo); // Array [ "a", "b" ]
+
+      foo.length = 9;
+      console.log(foo.length); // 9
+      console.log(foo); // Array(9) [ "a", "b", <7 empty slots> ]
+      console.log(foo[3]); // undefined (karena index 2 - sudah kosong)
+    </script>
   </body>
 </html>
