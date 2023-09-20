@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Method Array.prototype.slice()</title>
   </head>
   <body>
-    <!-- hal 296 -->
+    <h1>Method Array.prototype.slice()</h1>
+    <script>
+      var foo = ["a", "b", "c", "d", "e", "f", "g"];
+      console.log(foo.slice()); // Array(7) [ "a", "b", "c", "d", "e", "f", "g" ]
+      console.log(foo.slice(3)); // Array(4) [ "d", "e", "f", "g" ]
+      console.log(foo.slice(3, 5)); // Array [ "d", "e" ]
+      console.log(foo.slice(3, 6)); // Array(3) [ "d", "e", "f" ]
+      // hal 296
+    </script>
   </body>
 </html>
